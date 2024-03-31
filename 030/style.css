@@ -18,3 +18,58 @@
 .btn {
     cursor: pointer; 
 }
+
+/* Adjust the style for match display */
+#matches p {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333; /* Change the color as needed */
+    border: 2px solid #007bff; /* Add a border */
+    padding: 10px; /* Add padding for better spacing */
+    border-radius: 5px; /* Add border radius */
+    background-color: #f8f9fa; /* Add background color */
+}
+
+/* Style for hover effect */
+#matches p:hover {
+    background-color: #007bff; /* Change background color on hover */
+    color: #fff; /* Change text color on hover */
+    cursor: pointer; /* Add pointer cursor on hover */
+}
+
+/* Style for matches box */
+#matchesBox {
+    background-color: #f8f9fa; /* Background color */
+    border: 2px solid #007bff; /* Border */
+    border-radius: 10px; /* Border radius */
+    padding: 20px; /* Padding */
+    margin-top: 20px; /* Margin top */
+}
+
+/* Style for matches title */
+#matchesBox h2 {
+    color: #007bff; /* Title color */
+    margin-bottom: 10px; /* Margin bottom */
+}
+
+/* Style for matches container */
+.matches-container {
+    max-height: 300px; /* Maximum height */
+    overflow-y: auto; /* Enable vertical scroll if needed */
+}
+
+/* Adjust the style for match display */
+#matches p {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333; /* Change the color as needed */
+}
+
+/* Style for hover effect */
+#matches p:hover {
+    background-color: #007bff; /* Change background color on hover */
+    color: #fff; /* Change text color on hover */
+    cursor: pointer; /* Add pointer cursor on hover */
+}

@@ -134,18 +134,20 @@ displayList(interns, "internList", true);
 
 // เพิ่มการจัดการเหตุการณ์สำหรับฟอร์มของผู้ประกอบการ
 document.getElementById("businessForm").addEventListener("submit", function (event) {
-    event.preventDefault(); // ป้องกันการรีเฟรชหน้า
-    const businessName = document.getElementById("businessName").value;
-    const businessExpertise = document.getElementById("businessExpertise").value;
+  event.preventDefault(); // ป้องกันการรีเฟรชหน้า
+  const businessName = document.getElementById("businessName").value;
+  const businessExpertise = document.getElementById("businessExpertise").value;
+  const businessImage = document.getElementById("businessImage").value; // เพิ่มการรับค่ารูปภาพจากฟอร์ม
 
-    // เพิ่มข้อมูลใหม่ลงใน businesses array
-    businesses.push({
-        name: businessName,
-        expertise: businessExpertise.split(","), // แยกความถนัดด้วยเครื่องหมาย ,
-        image: "businesses/default.jpg" // รูปภาพเริ่มต้น
-    });
+  // เพิ่มข้อมูลใหม่ลงใน businesses array
+  businesses.push({
+      name: businessName,
+      expertise: businessExpertise.split(","), // แยกความถนัดด้วยเครื่องหมาย ,
+      image: businessImage // ใช้รูปภาพที่ผู้ใช้เลือกจากฟอร์ม
+  });
 
-    // เรียกใช้ฟังก์ชัน displayList เพื่อแสดงรายการใหม่
-    displayList(businesses, "businessList");
+  // เรียกใช้ฟังก์ชัน displayList เพื่อแสดงรายการใหม่
+  displayList(businesses, "businessList");
 });
+
 
